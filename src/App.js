@@ -1,5 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import Map from './components/map.js';
+import Dialog from './components/dialog.js';
+import Chat from './components/chat.js';
+import './index.css';
 
 function App() {
   return (
