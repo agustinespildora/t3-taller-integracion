@@ -1,7 +1,7 @@
 import Map from './components/map.js';
 import Dialog from './components/dialog.js';
 import Chat from './components/chat.js';
-import Link from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './index.css';
 
 function App() {
