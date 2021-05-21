@@ -2,9 +2,7 @@ import '../index.css';
 
 function Dialog() {
   return (
-    <div className="App">
-      
-    </div>
+    <p>Dialog</p>
   );
 }
 

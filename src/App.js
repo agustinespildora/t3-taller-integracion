@@ -1,26 +1,26 @@
-import Map from './components/map.js';
-import Dialog from './components/dialog.js';
-import Chat from './components/chat.js';
+import Map from './components/Map.jsx';
+import Dialog from './components/Dialog.jsx';
+import Chat from './components/Chat.jsx';
 import { Link } from 'react-router-dom';
 import './index.css';
 
 function App() {
   return (
-    <div>
-      <nav>
-          <ul id="navigation">
-              <li>
-                  <Link to="/flights">Flights</Link>
-              </li>
-              {/* <li>
-                  <Link to="/about">About</Link>
-              </li>
-              <li>
-                  <Link to="/contact">Contact</Link>
-              </li> */}
-          </ul>
-      </nav>
-  </div>
+    <div className="container">
+      <div className="uno">
+        <Map
+        />
+      </div>
+      <div className="dos">
+        <Chat
+        />
+      </div>
+      <div className="tres">
+        <Dialog
+        />
+      </div>
+
+    </div>
   );
 }
 

@@ -2,9 +2,8 @@ import '../index.css';
 
 function Map() {
   return (
-    <div className="App">
-      
-    </div>
+    
+      <p>Map</p>
   );
 }
 
