@@ -2,8 +2,7 @@ import '../index.css';
 
 function Map() {
   return (
-    
-      <p>Map</p>
+    <p>Map</p>
   );
 }
 
