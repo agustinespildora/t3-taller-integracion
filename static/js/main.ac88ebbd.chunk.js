@@ -1,0 +1,2 @@
+(this.webpackJsonpt3=this.webpackJsonpt3||[]).push([[0],{23:function(t,e,n){"use strict";n.r(e);var c=n(0),i=n.n(c),r=n(10),s=n.n(r),j=(n(3),n(1));var d=n(12);var a=function(){return Object(j.jsx)("div",{children:Object(j.jsx)("nav",{children:Object(j.jsx)("ul",{id:"navigation",children:Object(j.jsx)("li",{children:Object(j.jsx)(d.a,{to:"/flights",children:"Flights"})})})})})};s.a.render(Object(j.jsx)(i.a.StrictMode,{children:Object(j.jsx)(a,{})}),document.getElementById("root"))},3:function(t,e,n){}},[[23,1,2]]]);
+//# sourceMappingURL=main.ac88ebbd.chunk.js.map
