@@ -2,7 +2,9 @@ import '../index.css';
 
 function Chat() {
   return (
-    <p>Chat</p>
+    <div>
+      <p>Chat</p>
+    </div>
   );
 }
 

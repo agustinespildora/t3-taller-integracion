@@ -1,14 +1,32 @@
-div {
+/* div {
   border: 1px solid rgb(0, 0, 0);
-  padding: 10px 10px;
+  padding: 5px 5px;
+} */
+
+
+.leaflet-container {
+  width: 100%;
+  height: 60vh;
 }
 
+.row-container {
+  padding: 1px 1px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  overflow-x: scroll;
+  max-width: 900px;
+}
+
+.flight-info {
+  min-width: 220px;
+}
 
 .container {
   display: grid;
   margin-left: 0px;
   grid-template-columns: 2fr 1fr;/*repeat(auto-fit, minmax(240px, 1fr)); 70% 25%; */
-  grid-template-rows: 65vh 25vh;/*minmax(310px, 2fr) minmax(310px, 1fr);/* repeat(2, minmax(310px, 1fr)); /* 450px 450px; */
+  grid-template-rows: 400px minmax(300px, 1fr);/* repeat(2, minmax(310px, 1fr)); /* 450px 450px; 65vh 25vh;*/
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 }
@@ -24,6 +42,7 @@ div {
   margin-top: 10px;
   grid-column: 2 / 2;
   grid-row: 1 / span 2;
+  min-width: 400px;
 
 }
 
@@ -31,7 +50,7 @@ div {
   margin-top: 10px;
   grid-column: 1 / 1;
   grid-row: 2 / 2;
-  max-height: 450px;
+  /* max-height: 450px; */
 
 }
 
