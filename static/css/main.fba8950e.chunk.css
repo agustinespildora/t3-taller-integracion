@@ -1,2 +1,0 @@
-.leaflet-container{width:100%;height:60vh}.row-container{padding:1px;display:flex;flex-wrap:nowrap;flex-direction:row;overflow-x:scroll;max-width:900px}.flight-info{min-width:220px}.container{display:grid;margin-left:0;grid-template-columns:2fr 1fr;grid-template-rows:400px minmax(300px,1fr);grid-column-gap:10px;grid-row-gap:10px}.uno{grid-column:1/2;grid-row:1/1}.dos,.uno{margin-top:10px}.dos{grid-column:2/2;grid-row:1/span 2;min-width:400px}.tres{margin-top:10px;grid-column:1/1;grid-row:2/2}
-/*# sourceMappingURL=main.fba8950e.chunk.css.map */
