@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import {SocketContext, socket} from './socket';
 import Map from './components/Map.jsx';
 import Dialog from './components/Dialog.jsx';
@@ -7,7 +7,7 @@ import './index.css';
 
 
 function App() {
-
+  
   return (
     <SocketContext.Provider value={socket}>
       <div className="container">

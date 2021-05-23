@@ -1,12 +1,12 @@
 import '../index.css';
 import React from 'react';
 
-const Flight = ({flight}) => {
+const Flight = ({ flight }) => {
 
   return (
     <div className={'flight-info'}>
-      <p>Origen: {flight.origin}</p>
-      <p>Destino: {flight.destination}</p>
+      <p>Origen: {flight.origin[0]}, {flight.origin[1]}</p>
+      <p>Destino: {flight.destination[0]}, {flight.destination[1]}</p>
       <p>Aerolínea: {flight.airline}</p>
       <p>Pasajeros:</p>
       {flight.passengers.map((passenger) => (

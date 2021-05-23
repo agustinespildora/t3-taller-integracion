@@ -32,11 +32,13 @@ const Dialog = ({}) => {
   return (
     <div>
       <p>Vuelos</p>
+
       <div className={'row-container'}>
         {flightsList.map((flight) => (
           <Flight flight={flight}/>
         ))}
       </div>
+
     </div>
   );
 };
