@@ -1,12 +1,8 @@
 import '../messages.css';
 import ChatBack from '../chat-back';
 import React, {useState, useContext, useCallback, useEffect} from 'react';
-import {SocketContext} from '../socket';
-import socketIOClient from 'socket.io-client';
 
-// const SOCKET_SERVER_URL = 'http://localhost:4000';
-// const SOCKET_SERVER_URL = 'http://tarea-3-websocket.2021-1.tallerdeintegracion.cl';
-// const NEW_CHAT_MESSAGE_EVENT = 'CHAT';
+
 
 const Chat = (props) => {
   const { messageObjects, sendMessageObject } = ChatBack(); // Creates a websocket and manages messaging

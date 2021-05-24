@@ -1,18 +1,11 @@
 import '../index.css';
 import React, {useState, useContext, useCallback, useEffect} from 'react';
-import { MapContainer, TileLayer, Marker, Popup, Polyline, ImageOverlay} from 'react-leaflet';
-import { LatLngBounds, Icon, L } from 'leaflet';
+import { MapContainer, TileLayer, Polyline} from 'react-leaflet';
 import {SocketContext} from '../socket';
 
 
 function Map() {
-  // const polyline = [
-  //   [-34.82264, -58.533321],
-  //   [-33.382761, -70.803203],
-  // ]
 
-  const plane_url = "https://cdn-0.emojis.wiki/emoji-pics/facebook/airplane-facebook.png"
-  const bounds = new LatLngBounds([-34.82264, -58.533321], [-33.382761, -70.803203])
 
   const limeOptions = { color: 'lime' }
   const redOptions = { color: 'red' }
@@ -24,11 +17,9 @@ function Map() {
   const socket = useContext(SocketContext);
 
   const [flightsList, setFlightsList] = useState([]);
-  // const [positionsDict, setPositionsDict] = useState({})
   const [positionsList, setPositionsList] = useState([]);
   const [len, setLen] = useState(0);
   const [polylinesList, setPolylinesList] = useState([]);
-  const [polylinesColors, setPolylinesColors] = useState([]);
 
   const handleFlights = useCallback((flights) => {
     flights.map((flight) => (
