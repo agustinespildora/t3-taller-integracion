@@ -1,6 +1,5 @@
 import socketIOClient from 'socket.io-client';
 import React, {useState, useContext, useCallback, useEffect, useRef,} from 'react';
-import {SocketContext} from '../socket';
 // const SOCKET_SERVER_URL = 'http://localhost:4000';
 const SOCKET_SERVER_URL = 'wss://tarea-3-websocket.2021-1.tallerdeintegracion.cl';
 const NEW_CHAT_MESSAGE_EVENT = 'CHAT';
@@ -8,7 +7,6 @@ const NEW_CHAT_MESSAGE_EVENT = 'CHAT';
 const ChatBack = () => {
   const [messageObjects, setMessageObjects] = useState([]); // Sent and received messages
   const socketRef = useRef();
-  // const socketRef = useContext(SocketContext);
   useEffect(() => {
     // Creates a WebSocket connection
     socketRef.current = socketIOClient(SOCKET_SERVER_URL, {
