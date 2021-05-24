@@ -3,7 +3,7 @@
 .chat-room-container {
   display: grid;
   margin-left: 0px;
-  height: 440px;
+  height: 700px;
   grid-template-columns: 80fr 20fr; /*repeat(auto-fit, minmax(240px, 1fr)); 70% 25%; */
   grid-template-rows: 10fr 70fr 20fr; /*minmax(310px, 2fr) minmax(310px, 1fr);/ repeat(2, minmax(310px, 1fr)); 450px 450px;*/
   grid-column-gap: 5px;
@@ -40,6 +40,12 @@
 .messages-list {
   list-style-type: none;
   padding: 0;
+}
+
+.nickname {
+  width: 200px;
+  height: 50px;
+  resize: inherit;
 }
 
 .new-message-input-field {

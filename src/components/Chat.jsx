@@ -12,7 +12,8 @@ const Chat = (props) => {
   const { messageObjects, sendMessageObject } = ChatBack(); // Creates a websocket and manages messaging
 
   const [newMessage, setNewMessage] = useState(''); // Message to be sent
-  const SENDER_NAME = 'Agustín';
+  const [nickName, setNickName] = useState(''); // Message to be sent
+  // const nickName = 'Agustín Espíldora';
 
   const handleNewMessageChange = (event) => {
     // Checks wether the change was becouse of an Enter key press event,
@@ -21,25 +22,29 @@ const Chat = (props) => {
   };
 
   const handleSendMessage = () => {
-    sendMessageObject(SENDER_NAME, newMessage);
+    sendMessageObject(nickName, newMessage);
     setNewMessage('');
   };
+  const handleNickName = (event) => {
+    setNickName(event.target.value);
+  }
 
 
   function dateFormat(date){
     var date1 = new Date(date);
     return date1.toLocaleString()
   }
+  
   return (
     <div className="chat-room-container">
-      <h4 className="room-name">Chat de torre de control</h4>
+      <h3>Chat de torre de control 🏢</h3>
       <div className="messages-container">
         <ol className="messages-list">
           {messageObjects.map((messageObject, i) => (
             <li
               key={i}
               className={`message-item ${
-                messageObject.name === SENDER_NAME ? 'my-message' : 'received-message'
+                messageObject.name === nickName ? 'my-message' : 'received-message'
               }`}
             >
               <div className="chat-date">{dateFormat(messageObject.date)}</div>
@@ -52,8 +57,16 @@ const Chat = (props) => {
       <textarea
         value={newMessage}
         onChange={handleNewMessageChange}
-        placeholder="Write message..."
+        placeholder="Escribe un mensaje..."
         className="new-message-input-field"
+      />
+      <h4></h4>
+      <textarea
+        title="Nombre"
+        value={nickName}
+        onChange={handleNickName}
+        placeholder="Elige un nombre"
+        className="nickname"
       />
       <button onClick={handleSendMessage} className="send-message-button">
         Send

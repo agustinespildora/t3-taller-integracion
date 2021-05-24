@@ -3,10 +3,22 @@
   padding: 5px 5px;
 } */
 
+.vuelo{
+  border: 1px solid rgb(0, 0, 0);
+  margin: 2px;
+  padding: 2px;
+}
 
+.flights{
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.align-right{
+  text-align: right;
+}
 .leaflet-container {
   width: 100%;
-  height: 60vh;
+  height: 50vh;
 }
 
 .row-container {
