@@ -74,7 +74,7 @@ function Map() {
       </div>
       <h3>Mapa en tiempo real 🗺️</h3>
       <div>
-        <MapContainer center={[0, 0]} zoom={1} scrollWheelZoom={false}>
+        <MapContainer center={[0, 0]} zoom={1} scrollWheelZoom={true}>
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
