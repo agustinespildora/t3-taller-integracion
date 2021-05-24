@@ -31,7 +31,7 @@ const Dialog = ({}) => {
 
   return (
     <div>
-      <h3>Vuelos 🛫</h3>
+      <h3>Vuelos ✈️</h3>
       <h4 className={'align-right'}>scroll 👇</h4>
       <div className={'row-container fights'}>
         {flightsList.map((flight) => (

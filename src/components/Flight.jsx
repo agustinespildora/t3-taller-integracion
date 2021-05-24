@@ -5,13 +5,13 @@ const Flight = ({ flight }) => {
 
   return (
     <div className={'flight-info vuelo'}>
-      <p>Vuelo: {flight.code}</p>
+      <p className={'bold'}>Vuelo: {flight.code}</p>
       <p>Origen: {flight.origin[0]}, {flight.origin[1]}</p>
       <p>Destino: {flight.destination[0]}, {flight.destination[1]}</p>
       <p>Aerolínea: {flight.airline}</p>
       <p>Avión: {flight.plane}</p>
       <p>Asientos: {flight.seats}</p>
-      <p>Pasajeros:</p>
+      <p className={'bold'}>Pasajeros:</p>
       {flight.passengers.map((passenger) => (
           <div>
             <li>Nombre: {passenger.name}</li>

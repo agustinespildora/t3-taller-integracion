@@ -2,15 +2,27 @@
   border: 1px solid rgb(0, 0, 0);
   padding: 5px 5px;
 } */
+body {
+  margin: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
+.bold{
+  font-weight: bolder;
+}
 .vuelo{
   border: 1px solid rgb(0, 0, 0);
   margin: 2px;
-  padding: 2px;
+  padding: 7px 7px;
+  border-radius: 7px 7px 7px 7px;
 }
 
 .flights{
   border: 1px solid rgb(0, 0, 0);
+  
 }
 
 .align-right{

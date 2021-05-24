@@ -32,42 +32,47 @@ const Chat = (props) => {
   }
   
   return (
-    <div className="chat-room-container">
-      <h3>Chat de torre de control 🏢</h3>
-      <div className="messages-container">
-        <ol className="messages-list">
-          {messageObjects.map((messageObject, i) => (
-            <li
-              key={i}
-              className={`message-item ${
-                messageObject.name === nickName ? 'my-message' : 'received-message'
-              }`}
-            >
-              <div className="chat-date">{dateFormat(messageObject.date)}</div>
-              {messageObject.name} {': '}
-              {messageObject.message}
-            </li>
-          ))}
-        </ol>
+    <div>
+      <div className="chat-room-container">
+        <h3>Chat de torre de control 🏢</h3>
+        <div className="messages-container">
+          <ol className="messages-list">
+            {messageObjects.map((messageObject, i) => (
+              <li
+                key={i}
+                className={`message-item ${
+                  messageObject.name === nickName ? 'my-message' : 'received-message'
+                }`}
+              >
+                <div className="chat-date">{dateFormat(messageObject.date)}</div>
+                {messageObject.name} {': '}
+                {messageObject.message}
+              </li>
+            ))}
+          </ol>
+        </div>
+        <textarea
+          value={newMessage}
+          onChange={handleNewMessageChange}
+          placeholder="Escribe un mensaje..."
+          className="new-message-input-field"
+        />
+        
+        <button onClick={handleSendMessage} className="send-message-button">
+          Send
+        </button>
       </div>
-      <textarea
-        value={newMessage}
-        onChange={handleNewMessageChange}
-        placeholder="Escribe un mensaje..."
-        className="new-message-input-field"
-      />
-      <h4></h4>
-      <textarea
-        title="Nombre"
-        value={nickName}
-        onChange={handleNickName}
-        placeholder="Elige un nombre"
-        className="nickname"
-      />
-      <button onClick={handleSendMessage} className="send-message-button">
-        Send
-      </button>
+      <h4>Ingresa tu nombre aquí! 😃</h4>
+        <textarea
+          title="Nombre"
+          value={nickName}
+          onChange={handleNickName}
+          placeholder="Elige un nombre"
+          className="nickname"
+        />
     </div>
+
+    
   );
 };
 
