@@ -22,7 +22,6 @@ function App() {
         <div className="tres">
           <Dialog
           />
-          <p> Probando</p>
         </div>
 
       </div>
