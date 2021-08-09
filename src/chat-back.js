@@ -8,7 +8,7 @@ const ChatBack = () => {
   const [messageObjects, setMessageObjects] = useState([]); // Sent and received messages
   const socketRef = useRef();
   useEffect(() => {
-    // Creates a WebSocket connection
+    // Creates a WebSocket connection yeah
     socketRef.current = socketIOClient(SOCKET_SERVER_URL, {
       path: '/flights',
       transports: ['websocket'],
